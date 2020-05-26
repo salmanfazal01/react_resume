@@ -27,27 +27,21 @@ class Navbar extends Component {
                     <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
                         <MDBNavbarNav left>
                             <MDBNavItem active>
-                                <MDBNavLink to="#!">Home</MDBNavLink>
+                                <MDBNavLink to="/">Home</MDBNavLink>
                             </MDBNavItem>
                             <MDBNavItem>
-                                <MDBNavLink to="#!">Features</MDBNavLink>
+                                <MDBNavLink to="/resume">Resume</MDBNavLink>
                             </MDBNavItem>
                             <MDBNavItem>
-                                <MDBNavLink to="#!">Pricing</MDBNavLink>
+                                <MDBNavLink to="/aboutme">About Me</MDBNavLink>
                             </MDBNavItem>
                             <MDBNavItem>
-                                <MDBDropdown>
-                                    <MDBDropdownToggle nav caret>
-                                        <span className="mr-2">Dropdown</span>
-                                    </MDBDropdownToggle>
-                                    <MDBDropdownMenu>
-                                        <MDBDropdownItem href="#!">Action</MDBDropdownItem>
-                                        <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
-                                        <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                                        <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                                    </MDBDropdownMenu>
-                                </MDBDropdown>
+                                <MDBNavLink to="/projects">Projects</MDBNavLink>
                             </MDBNavItem>
+                            <MDBNavItem>
+                                <MDBNavLink to="/contact">Contact</MDBNavLink>
+                            </MDBNavItem>
+
                         </MDBNavbarNav>
                         <MDBNavbarNav right>
                             <MDBNavItem>
