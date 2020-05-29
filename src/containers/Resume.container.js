@@ -68,6 +68,28 @@ class ResumeContainer extends Component {
                 subtitle: "Coventry University",
                 description: "First class degree"
             },
+        ],
+        skills: [
+            {
+                title: "Web Design",
+                description: "lorem bhfv shfveyf vyukbejhvcuysve hjvsekcubsgvckuds vchbsdliudbv dsyvyusdlb ydvy",
+                icon: "fas fa-code"
+            },
+            {
+                title: "Web Design",
+                description: "lorem bhfv shfveyf vyukbejhvcuysve hjvsekcubsgvckuds vchbsdliudbv dsyvyusdlb ydvy",
+                icon: "fas fa-code"
+            },
+            {
+                title: "Web Design",
+                description: "lorem bhfv shfveyf vyukbejhvc uysve hjvsekcubsgvckuds vchbsdliudbv dsyvyusdlb ydvy",
+                icon: "fas fa-code"
+            },
+            {
+                title: "Web Design",
+                description: "lorem bhfv shfveyf vyukbejhvcuysve hjvsekcubsgvckuds vchbsdliudbv dsyvyusdlb ydvy",
+                icon: "fas fa-code"
+            },
         ]
 
     };
@@ -80,7 +102,7 @@ class ResumeContainer extends Component {
                 <MDBContainer fluid>
                     <MDBRow>
 
-                        <MDBCol size="2" className="col-bg1">
+                        <MDBCol xl="2" className="col-bg1">
                             <SideContent
                                 name={this.state.name}
                                 designation={this.state.designation}
@@ -92,13 +114,14 @@ class ResumeContainer extends Component {
                             />
                         </MDBCol>
 
-                        <MDBCol size="10" className="col-bg1">
+                        <MDBCol xl="10" className="col-bg1">
                             <MainContent
                                 name={this.state.name}
                                 summary={this.state.summary}
                                 email={this.state.personal_information.email}
                                 education={this.state.education}
                                 experience={this.state.experience}
+                                skills={this.state.skills}
                             />
                         </MDBCol>
 

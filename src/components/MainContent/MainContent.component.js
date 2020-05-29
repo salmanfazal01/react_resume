@@ -5,6 +5,7 @@ import Aux from '../../hoc/ReactAux';
 import WidgetCard from "../UIElements/Card/Card.component";
 import PersonalSummary from "../PersonalSummary/PersonalSummary.component";
 import ResumeTimeline from "../ResumeTimeline/ResumeTimeline.component";
+import Skills from "../Skills/Skills.component";
 
 
 const MainContent = (props) => {
@@ -22,6 +23,14 @@ const MainContent = (props) => {
 
                         <MDBCol size="6" className="col-bg1">
                             <ResumeTimeline title="Experience" data={props.experience}/>
+                        </MDBCol>
+                    </MDBRow>
+                </MDBContainer>
+
+                <MDBContainer fluid style={{marginBottom: '47px'}}>
+                    <MDBRow>
+                        <MDBCol size="12">
+                            <Skills title="Skill" data={props.skills} title="Skills"/>
                         </MDBCol>
                     </MDBRow>
                 </MDBContainer>
